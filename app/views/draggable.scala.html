@@ -1,0 +1,10 @@
+@(message: String, username: String)
+
+@layout.main(message) {
+	
+	<div class="draggable panel panel-primary panel-websocket">
+		<div class="panel-heading">みんなでドラッグ可能なパネル</div>
+		<div class="panel-body">@(username)さんとしてアクセス</div>
+		<div class="panel-footer">@(new java.util.Date().format("yyyy/MM/dd"))</div>
+	</div>
+}
